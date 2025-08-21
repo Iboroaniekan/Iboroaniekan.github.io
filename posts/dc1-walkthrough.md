@@ -1,6 +1,6 @@
 # VulnHub DC-1 Walkthrough: From Drupalgeddon to Root
 
-**Date:** October 27, 2023
+**Date:** February 10, 2022
 **Platform:** VulnHub
 **Difficulty:** Beginner
 
