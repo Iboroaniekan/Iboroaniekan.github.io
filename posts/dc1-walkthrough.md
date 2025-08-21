@@ -24,9 +24,9 @@ The scan showed port 80 was open, running a Drupal website.
 
 ## Step 2: Discovering vulnerabilities - Using Nikto
 
- ┌──(root㉿kali)-[/home/atech] 
+ ## (root㉿kali) - [/home/atech] 
  
- └─# nikto --host http://10.0.2.5
+ ## nikto --host http://10.0.2.5
 - Nikto v2.5.0
 ---------------------------------------------------------------------------
 + Target IP:          10.0.2.5
