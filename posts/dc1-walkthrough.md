@@ -97,17 +97,17 @@ I used a payload from metasploit on the target.
 
   Payload options (php/meterpreter/reverse_tcp):
 
-   Name   Current Setting  Required  Description
+  ## Name   ##Current ##Setting  ##Required  ##Description
    
-   LHOST                      yes      The listen address (an interface may be specified)
-   LPORT     4444             yes       The listen port
+   ##LHOST                      ##yes      ##The listen address (an interface may be specified)
+   ##LPORT     ##4444            ##yes      ##The listen port
 
 
-Exploit target:
+##Exploit target:
 
-   Id  Name
-   --  ----
-   0   Drupal 7.0 - 7.31 (form-cache PHP injection method)
+  ##Id ##Name
+  
+   ##0   ##Drupal 7.0 - 7.31 (form-cache PHP injection method)
 
 
 
