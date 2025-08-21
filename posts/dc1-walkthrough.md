@@ -97,8 +97,9 @@ I used a payload from metasploit on the target.
 
   Payload options (php/meterpreter/reverse_tcp):
 
-  ## Name   Current ##Setting  Required  Description
+   Name   Current Setting  Required  Description
    ##LHOST                      yes      The listen address (an interface may be specified)
+   
    ##LPORT     4444            yes      The listen port
 
 
