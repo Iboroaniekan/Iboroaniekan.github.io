@@ -11,7 +11,7 @@ DC-1 is a deliberately vulnerable machine designed for beginners to practice pen
 I started by finding the machine's IP address on my network using the `netdiscover` command.
 
 Then, I scanned the machine with `nmap` to see what doors were open:
-![Results of the Nmap scan showing open ports](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/Nmap%20Scan.png?raw=true)
+![Results of the Nmap scan showing open ports](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/54ab891a773e2e57815156e69734d32d5ad12db4/assets/images/Nmap%20Scan.png)
 
 ```bash
 nmap -sV -sC 192.168.1.123
