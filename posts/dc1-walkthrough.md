@@ -41,7 +41,7 @@ nmap -sS -sV -O 10.0.2.7
 
 ## Step 2: Discovering vulnerabilities - Using Nikto
 
- ## (root㉿kali) - [/home/atech] 
+ ## (root㉿kali) - [/root@Kali] 
  
  ## nikto --host http://10.0.2.7
 - Nikto v2.5.0
@@ -91,23 +91,20 @@ I also used built in searchsploit on my kali machine to search for vulnerabilty 
 
 I also used Metasploit framework to search for any vulnerabilty that i can use to gain shell access on the machine and i found one 
 
-![Results of searchsploit]
+![Results of msf](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/msf.png?raw=true)
 
- ## Vulnerable Services
 
  Drupal 7.x has a known vulnerability found in exploit database and on metasploit .
 
  1. Vulnerable to Remote Code Execution ( Drupalgeddon2   )
 
-
-2. Apache/2.2.22 appears to be outdated (current is at least Apache/2.4.54). Apache 2.2.34 is the EOL for t
+2. Apache/2.2.22 appears to be outdated (current is at least Apache/2.4.54). 
 
    ## Step 3 :  Exploitation
 
-I knew Drupal 7 was old and might have known vulnerabilities. I searched for "Drupal 7 exploit" and found "Drupalgeddon 2".
+After looking for vulnerabilty on different database i decided to use an exploit found in metasploit to gain access to a meterpreter shell
 
-I searched On Metasploit and found it was vulnerable to Remote code execution.
-
+![Results of msf]
 
 I used a payload from metasploit on the target.
 
