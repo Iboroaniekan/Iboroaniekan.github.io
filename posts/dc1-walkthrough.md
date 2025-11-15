@@ -86,7 +86,12 @@ After using Nikto to scan for vulnerable services i decided to try manually usin
 
 I also used built in searchsploit on my kali machine to search for vulnerabilty and i discovered there is a vulnerabilty that could make me add a user as an admin on the website.
 
-![Results of the wappalyzer]
+![Results of searchsploit](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/searchsploit.png?raw=true)
+
+
+I also used Metasploit framework to search for any vulnerabilty that i can use to gain shell access on the machine and i found one 
+
+![Results of searchsploit]
 
  ## Vulnerable Services
 
