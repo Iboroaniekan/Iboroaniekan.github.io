@@ -80,7 +80,7 @@ nmap -sS -sV -O 10.0.2.7
 + /: DEBUG HTTP verb may show server debugging information. See: https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications?view=vs-2017
 + /web.config: ASP config file is accessible.
 
-After using Nikto to scan for vulnerable services i decided to try manually using google to look for vulnerability on drupal7.I looked at exploi database on google and found a known vulnerabilty.
+After using Nikto to scan for vulnerable services i decided to try manually using google to look for vulnerability on drupal7.I looked at exploit database on google and found a known vulnerabilty.
 
 ![Results of the exploitdb ](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/exploitdb.png?raw=true)
 
@@ -124,9 +124,19 @@ I was logged in as a user called `www-data`. I needed to get a proper shell so i
 
 Python -c 'import pty; pty.spawn("/bin/bash")'
 
-![Results of searchsploit]
+![Results of spawnshell](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/spawn%20shell.png?raw=true)
 
-Now we need to check for a config file since i can see a site folder in the directory
+After i spawn the shell i got access to the sites folder and changed directory to it 
+
+![Results of sites](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/sites.png?raw=true)
+
+Now after viewing the files inside the sites folder i saw a settings.php file and i opened it and found credentials related to the database and i also found flag2 in it 
+
+![Results of database](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/database.png?raw=true)
+
+Now after seeing the information related to the database i decided to connect to the mysql server since i used netstat and discovered mysql is open on the machine 
+
+![Results of msfpayload]
 
 
 
