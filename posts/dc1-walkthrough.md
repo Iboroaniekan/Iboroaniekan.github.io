@@ -136,7 +136,31 @@ Now after viewing the files inside the sites folder i saw a settings.php file an
 
 Now after seeing the information related to the database i decided to connect to the mysql server since i used netstat and discovered mysql is open on the machine 
 
-![Results of msfpayload]
+![Results of mysql](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/data%20info.png?raw=true)
+
+Now i switched to view the tables in the database to look for interesting items:
+
+![Results of tables](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/tables.png?raw=true)
+
+after viewing the table i selected the users table using select * FROM users; and i got users credentials,emails.
+
+![Results of userinfo](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/user%20info.png?raw=true)
+
+Now after seeing the users information i tried to crack the password but wasnt successful so i decided to use the exploit found in searchsploit to add a user as an admin.
+
+![Results of adminuser](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/adminuser.png?raw=true)
+
+Now i have successfully added a user as an admin with the details below :
+
+![Results of adminaccess](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/adminaccess.png?raw=true)
+
+After successfully creating a user i decided to login to the admin panel :
+
+![Results of login](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/flag2.png?raw=true)
+I logged in and found flag 3 there.
+
+Here is also flag4 found 
+![Results of flag4](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/flag4.png?raw=true)
 
 
 
