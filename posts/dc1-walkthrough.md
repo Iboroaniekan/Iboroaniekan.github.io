@@ -163,20 +163,26 @@ Here is also flag4 found
 ![Results of flag4](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/flag4.png?raw=true)
 
 
+Now i need to escalate to become root user on this machine and i first of all looked for binaries that i could use to exploit the machine
 
+![Results of find](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/find.png?raw=true)
 
+after confirming that Find is there I looked for files with special permissions using the `find` command:
 
-I looked for files with special permissions using the `find` command:
+![Results of perm](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/perm.png?raw=true)
 
 ```bash
 find / -perm -u=s -type f 2>/dev/null
 ```
-I found a strange binary. When I ran it, it gave me a root shell! I used the `whoami` command to prove it:
+After confirming it i went to gtfobins to look for command i could use to root the machine and i found one ;
 
-```bash
-whoami
-# root
-```
+![Results of root](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/root.png?raw=true)
+
+
+after exploiting it i ran the whoami command to prove if i am now root on this machine and i was root so i need to look for the final flag in the root directory
+
+![Results of finalflag](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/finalflag.png?raw=true)
+
 
 ## Conclusion
 This was a fun machine! I learned how to:
