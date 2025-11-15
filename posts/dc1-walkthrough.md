@@ -24,14 +24,17 @@ nmap -sS -sV -O 10.0.2.7
 
   Then i also used nmap to run a script scan :
 
- ![Results of the Nmap scan showing services] (https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/nmap%20scriptscan.png?raw=true)
+ ![Results of the Nmap scan showing services](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/nmap%20scriptscan.png?raw=true)
 
  Also the script scan showed that a robots.txt file was found,The scan showed port 80 was open, running a Drupal website.
 
  INFORMATION DISCLOSURE:
  server was revealing information about its version number :
  
+ ![Results of the Nmap scan showing services](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/apache.png?raw=true)
 
+ I also used wappalyzer to see what technologies was used in building the website and i discovered drupal 7 was running revealing also the version number of the content management system (CMS).
+ 
  
   
 
