@@ -80,9 +80,13 @@ nmap -sS -sV -O 10.0.2.7
 + /: DEBUG HTTP verb may show server debugging information. See: https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications?view=vs-2017
 + /web.config: ASP config file is accessible.
 
-After using Nikto to scan for vulnerable services i decided to try manually using google to look for vulnerability on drupal7
+After using Nikto to scan for vulnerable services i decided to try manually using google to look for vulnerability on drupal7.I looked at exploi database on google and found a known vulnerabilty.
 
+![Results of the exploitdb ](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/exploitdb.png?raw=true)
 
+I also used built in searchsploit on my kali machine to search for vulnerabilty and i discovered there is a vulnerabilty that could make me add a user as an admin on the website.
+
+![Results of the wappalyzer]
 
  ## Vulnerable Services
 
