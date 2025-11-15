@@ -31,26 +31,25 @@ nmap -sS -sV -O 10.0.2.7
  INFORMATION DISCLOSURE:
  server was revealing information about its version number :
  
- ![Results of the Nmap scan showing services](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/apache.png?raw=true)
+ ![Results of the Apache info](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/apache.png?raw=true)
 
  I also used wappalyzer to see what technologies was used in building the website and i discovered drupal 7 was running revealing also the version number of the content management system (CMS).
  
- 
+ ![Results of the wappalyzer](https://github.com/Iboroaniekan/Iboroaniekan.github.io/blob/main/assets/images/wappalyzer.png?raw=true)
   
-
 
 
 ## Step 2: Discovering vulnerabilities - Using Nikto
 
  ## (root㉿kali) - [/home/atech] 
  
- ## nikto --host http://10.0.2.5
+ ## nikto --host http://10.0.2.7
 - Nikto v2.5.0
 ---------------------------------------------------------------------------
-+ Target IP:          10.0.2.5
-+ Target Hostname:    10.0.2.5
++ Target IP:          10.0.2.7
++ Target Hostname:    10.0.2.7
 + Target Port:        80
-+ Start Time:         2025-08-21 12:28:05 (GMT1)
++ Start Time:         2025-11-15 12:28:05 (GMT1)
 ---------------------------------------------------------------------------
 + Server: Apache/2.2.22 (Debian)
 + /: Retrieved x-powered-by header: PHP/5.4.45-0+deb7u14.
@@ -81,18 +80,8 @@ nmap -sS -sV -O 10.0.2.7
 + /: DEBUG HTTP verb may show server debugging information. See: https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications?view=vs-2017
 + /web.config: ASP config file is accessible.
 
-## INFORMATION DISCLOSURE 
-     Server revealing too much info about the version
+After using Nikto to scan for vulnerable services i decided to try manually using google to look for vulnerability on drupal7
 
-  Server: Apache/2.2.22 (Debian)
-
-  /robots.txt file was found when crawling the website.
-
-/LICENSE.txt file was found on the webpage
-
-/web.config file was found
-
- Drupal 7 was identified via the x-generator header. ( Drupal 7.x)
 
 
  ## Vulnerable Services
